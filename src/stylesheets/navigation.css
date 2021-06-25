@@ -1,0 +1,25 @@
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav li{
+    padding: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav li:not(.theme-select):hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-select{
+    margin-left: auto;
+    border-right: none;
+}

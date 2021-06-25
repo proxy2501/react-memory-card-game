@@ -1,0 +1,15 @@
+.game{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.game.multiplayer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+}

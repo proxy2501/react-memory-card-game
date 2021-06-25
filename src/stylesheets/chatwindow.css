@@ -1,0 +1,43 @@
+.lobby .chat-window{
+    display: flex;
+    flex-direction: column;
+
+    /* flex-grow later, maybe */
+    /* then use min-width, min-height etc. */
+    height: 350px;
+    width: 300px;
+    border-radius: 13px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.lobby .chat-window .messages{
+    height: 100%;
+    resize: none;
+    border-radius: 13px;
+
+    margin-bottom: 5px;
+}
+
+.game .chat-window{
+    display: flex;
+    flex-direction: column;
+
+    /* flex-grow later, maybe */
+    /* then use min-width, min-height etc. */
+    height: 350px;
+    border-radius: 13px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.game .chat-window .messages{
+    height: 100%;
+    resize: none;
+    border-radius: 13px;
+
+    margin-bottom: 5px;
+}

@@ -1,0 +1,29 @@
+.card {
+    border-radius: 13px;
+    box-shadow: 0 0 5px 4px rgb(0, 0, 0, .2);
+    transform: perspective(1000px) rotateY(var(--rotationY, 0)) translateY(var(--translationY, 0));
+    transform-style: preserve-3d;
+    transition: 0.4s;
+}
+
+.card.flip {
+    --rotationY: 180deg;
+}
+
+.card.hide {
+    visibility: hidden;
+}
+
+.card:hover:not(.flip) {
+    --translationY: -2px;
+    box-shadow: 0 2px 6px 4px rgb(0, 0, 0, .4);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transform: rotateY(180deg);
+}
